@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gtsmotogt.github.io/interpreterbenjamin/sitemap.xml
