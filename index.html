@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Benjamin Kim | Korean-English Business Interpreter in Seoul</title>
+<meta name="description" content="Korean-English business interpreter based in the Seoul metro area — negotiations, factory visits, trade shows, and in-country representative services across medical, IT, food, cosmetics, logistics, construction, and corporate setup.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Benjamin Kim | Korean-English Business Interpreter in Seoul">
+<meta property="og:description" content="Korean-English business interpreter based in the Seoul metro area — negotiations, factory visits, trade shows, and in-country representative services.">
+<meta name="twitter:card" content="summary">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap');
+
+  :root{
+    --ink:#12181f;
+    --ink-soft:#4c5661;
+    --paper:#f2f3f0;
+    --panel:#ffffff;
+    --navy:#16233a;
+    --brass:#9c7233;
+    --brass-strong:#7c5a28;
+    --line:#d8d9d3;
+    --line-soft:#e6e7e2;
+    --good:#3e6b63;
+    --shadow: 0 1px 2px rgba(18,24,31,.04), 0 8px 24px rgba(18,24,31,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#eceef1;
+      --ink-soft:#a7adb6;
+      --paper:#0f141b;
+      --panel:#161d27;
+      --navy:#0c121c;
+      --brass:#c99a54;
+      --brass-strong:#e0b06e;
+      --line:#2a323d;
+      --line-soft:#232a34;
+      --good:#6fa79b;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#eceef1;
+    --ink-soft:#a7adb6;
+    --paper:#0f141b;
+    --panel:#161d27;
+    --navy:#0c121c;
+    --brass:#c99a54;
+    --brass-strong:#e0b06e;
+    --line:#2a323d;
+    --line-soft:#232a34;
+    --good:#6fa79b;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+
+  *{box-sizing:border-box}
+  html{color-scheme:light dark}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', -apple-system, sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    padding-inline:0;
+  }
+  img{max-width:100%}
+  .wrap{max-width:1080px;margin-inline:auto;padding-inline:24px}
+  h1,h2,h3{font-family:'Fraunces', Georgia, serif; font-weight:500; text-wrap:balance; margin:0}
+  .eyebrow{
+    font-family:'IBM Plex Mono', ui-monospace, monospace;
+    font-size:12px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--brass-strong); display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{content:"";width:18px;height:1px;background:var(--brass-strong)}
+  a{color:inherit}
+  .muted{color:var(--ink-soft)}
+  section{padding-block:72px}
+  @media (max-width:640px){ section{padding-block:48px} }
+
+  /* nav */
+  header.nav{
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:30;
+    background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{display:flex; align-items:center; justify-content:space-between; padding-block:16px}
+  .brand{font-family:'Fraunces',serif; font-weight:600; font-size:19px; letter-spacing:.01em}
+  .brand small{display:block; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.1em; color:var(--ink-soft); font-weight:500; margin-top:2px}
+  nav.links{display:flex; gap:28px; font-size:14px}
+  nav.links a{text-decoration:none; color:var(--ink-soft)}
+  nav.links a:hover{color:var(--ink)}
+  @media (max-width:760px){ nav.links{display:none} }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--ink); color:var(--paper);
+    padding:11px 20px; border-radius:3px; text-decoration:none;
+    font-size:14px; font-weight:500; white-space:nowrap;
+    border:1px solid var(--ink);
+  }
+  .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--line)}
+  .btn.brass{background:var(--brass); border-color:var(--brass); color:#fff9f0}
+
+  /* hero */
+  .hero{padding-block:80px 60px}
+  .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center}
+  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr} }
+  .hero h1{font-size:clamp(34px,5vw,54px); line-height:1.08}
+  .pair{
+    margin-top:18px; padding-left:16px; border-left:2px solid var(--line);
+    font-size:14px; color:var(--ink-soft); font-style:italic; font-family:'Fraunces',serif;
+  }
+  .hero p.lead{margin-top:22px; font-size:17px; max-width:52ch; color:var(--ink-soft)}
+  .cta-row{display:flex; gap:12px; margin-top:30px; flex-wrap:wrap}
+
+  .dial{
+    background:var(--navy); border-radius:6px; padding:26px;
+    box-shadow:var(--shadow); color:#eef0ea;
+  }
+  .dial .eyebrow{color:#c9a878}
+  .dial .eyebrow::before{background:#c9a878}
+  .channel{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-block:14px; border-top:1px solid rgba(255,255,255,.1);
+    font-family:'IBM Plex Mono',monospace; font-size:13px;
+  }
+  .channel:first-of-type{border-top:none; margin-top:16px}
+  .channel b{font-family:'Fraunces',serif; font-weight:500; font-size:16px; font-style:normal; letter-spacing:0}
+  .dot{width:7px;height:7px;border-radius:50%; background:#6fa79b; box-shadow:0 0 0 3px rgba(111,167,155,.25); flex:none}
+
+  /* stats */
+  .stats{border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+  .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:24px; padding-block:36px}
+  @media (max-width:760px){ .stats-grid{grid-template-columns:repeat(2,1fr)} }
+  .stat b{display:block; font-family:'Fraunces',serif; font-size:28px; font-weight:500}
+  .stat span{font-size:13px; color:var(--ink-soft)}
+
+  /* industry chips */
+  .chip-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+  .chip{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.02em;
+    padding:7px 13px; border:1px solid var(--line); border-radius:20px; color:var(--ink-soft);
+    background:var(--panel);
+  }
+
+  /* services */
+  .section-head{max-width:60ch; margin-bottom:40px}
+  .section-head h2{font-size:clamp(26px,3.4vw,34px)}
+  .section-head p{margin-top:12px; color:var(--ink-soft)}
+  .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden}
+  @media (max-width:700px){ .cards{grid-template-columns:1fr} }
+  .card{background:var(--panel); padding:30px}
+  .card .idx{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--brass-strong)}
+  .card h3{font-size:19px; margin-top:10px}
+  .card p{margin-top:8px; font-size:14.5px; color:var(--ink-soft)}
+
+  /* why */
+  .why{background:var(--navy); color:#eef0ea; border-radius:8px; padding:48px}
+  @media (max-width:640px){ .why{padding:30px 22px} }
+  .why .eyebrow{color:#c9a878}
+  .why .eyebrow::before{background:#c9a878}
+  .why h2{color:#fff; font-size:clamp(24px,3.2vw,32px); margin-top:12px; max-width:22ch}
+  .why-grid{display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:30px}
+  @media (max-width:700px){ .why-grid{grid-template-columns:1fr} }
+  .why-item{border-top:1px solid rgba(255,255,255,.15); padding-top:16px}
+  .why-item h4{font-family:'Fraunces',serif; font-weight:500; font-size:16px; margin-bottom:6px}
+  .why-item p{font-size:14px; color:#b9bfc7}
+
+  /* how */
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:28px}
+  @media (max-width:760px){ .steps{grid-template-columns:1fr} }
+  .step{position:relative; padding-top:20px; border-top:2px solid var(--brass)}
+  .step .num{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--brass-strong)}
+  .step h3{font-size:18px; margin-top:8px}
+  .step p{margin-top:8px; font-size:14.5px; color:var(--ink-soft)}
+
+  /* engagements */
+  .eng-list{display:flex; flex-direction:column}
+  .eng{
+    display:grid; grid-template-columns:140px 1fr; gap:24px;
+    padding-block:22px; border-top:1px solid var(--line-soft);
+  }
+  .eng:last-child{border-bottom:1px solid var(--line-soft)}
+  @media (max-width:600px){ .eng{grid-template-columns:1fr; gap:6px} }
+  .eng .tag{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--brass-strong); letter-spacing:.05em; text-transform:uppercase}
+  .eng p{font-size:15px}
+  .eng p b{font-weight:600}
+
+  /* testimonial */
+  .quote{border-left:3px solid var(--brass); padding-left:26px; margin-top:8px}
+  .quote p{font-family:'Fraunces',serif; font-style:italic; font-size:clamp(21px,2.8vw,28px); line-height:1.42; color:var(--ink)}
+  .quote cite{display:block; margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.03em; color:var(--ink-soft); font-style:normal}
+
+  /* contact */
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px}
+  @media (max-width:760px){ .contact-grid{grid-template-columns:1fr} }
+  .contact-card{background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:28px}
+  .contact-card h3{font-size:17px; margin-bottom:16px}
+  .contact-line{display:flex; align-items:center; gap:12px; padding-block:11px; border-top:1px solid var(--line-soft); font-size:14.5px}
+  .contact-line:first-of-type{border-top:none}
+  .contact-line a{text-decoration:none; font-weight:500}
+  .contact-line .k{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft); width:74px; flex:none}
+  ul.checklist{list-style:none; margin-top:6px; display:flex; flex-direction:column; gap:10px}
+  ul.checklist li{font-size:14.5px; color:var(--ink-soft); padding-left:20px; position:relative}
+  ul.checklist li::before{content:"—"; position:absolute; left:0; color:var(--brass)}
+
+  footer{border-top:1px solid var(--line); padding-block:32px; margin-top:20px}
+  .footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:13px; color:var(--ink-soft)}
+  footer a{color:var(--ink-soft); text-decoration:underline}
+
+  /* faq */
+  .faq-list{display:flex; flex-direction:column}
+  .faq-item{padding-block:22px; border-top:1px solid var(--line-soft)}
+  .faq-item:last-child{border-bottom:1px solid var(--line-soft)}
+  .faq-item h3{font-size:16.5px; font-weight:500}
+  .faq-item p{margin-top:8px; font-size:14.5px; color:var(--ink-soft); max-width:65ch}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Benjamin Kim",
+      "jobTitle": "Korean-English Business Interpreter",
+      "description": "Korean-English business interpreter based in the Seoul metro area, working business meetings, negotiations, factory and site visits, trade shows, sourcing calls, and in-country representative roles across medical, IT, food, cosmetics, logistics, construction, and corporate-setup industries.",
+      "email": "mailto:gts.motogt@gmail.com",
+      "telephone": "+82-10-7491-5501",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Seoul Metropolitan Area",
+        "addressCountry": "KR"
+      },
+      "knowsLanguage": ["ko", "en"],
+      "areaServed": { "@type": "Country", "name": "South Korea" },
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Meeting & Negotiation Interpretation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Factory & Site Visit Interpretation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Trade Show & Exhibition Interpretation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sourcing & Due-Diligence Call Interpretation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "In-Country Representative Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Setup & Operations Support" } }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you provide Korean-English interpretation for business meetings in Seoul?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I interpret negotiations, meetings, and consultations between Korean and English across the Seoul metro area, and nationwide in Korea on request." }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries do you specialize in?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Medical, IT, food, cosmetics, logistics, construction, and corporate setup and operations — each from direct, hands-on career experience, not just interpretation work." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you interpret for factory or construction site visits?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I interpret on-site at factories, production floors, and construction sites, handling technical terminology accurately in real time." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you act as an in-country representative for a foreign company in Korea?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I take on ongoing, on-the-ground representative roles for foreign companies operating in Korea, including liaison with partners, regulators, and local staff." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a minimum booking time for interpretation sessions?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, sessions have a 2-hour minimum." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I book an interpretation session with Benjamin Kim?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Email or WhatsApp with the date, time, format, and purpose of the meeting, and availability will be confirmed directly." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand">BENJAMIN KIM<small>KR ⇄ EN BUSINESS INTERPRETER</small></div>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#why">Why Me</a>
+      <a href="#how">How It Works</a>
+      <a href="#testimonials">Clients</a>
+      <a href="#background">Background</a>
+    </nav>
+    <a class="btn brass" href="#contact">Book a Session</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Business &amp; Professional Interpretation · Seoul Metro Area · Nationwide on request</p>
+      <h1>Your deal shouldn't get lost in translation.</h1>
+      <p class="pair">"협상은 번역 과정에서 길을 잃어선 안 됩니다."</p>
+      <p class="lead">I'm Benjamin Kim — a Korean-English business interpreter based in the Seoul metro area. Decades interpreting professional negotiations, backed by a career built inside the industries I interpret for, not just alongside them.</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:gts.motogt@gmail.com?subject=Interpretation%20request">Check availability</a>
+        <a class="btn ghost" href="https://wa.me/821074915501" target="_blank" rel="noopener">WhatsApp me</a>
+      </div>
+    </div>
+    <div class="dial">
+      <p class="eyebrow">Channel select</p>
+      <div class="channel"><span><b>CH 1</b> · English</span><span class="dot"></span></div>
+      <div class="channel"><span><b>CH 2</b> · 한국어 (Korean)</span><span class="dot"></span></div>
+      <div class="channel"><span><b>CH 3</b> · Business context</span><span class="dot"></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>32 yrs</b><span>working in English professionally, in business settings</span></div>
+    <div class="stat"><b>30+ yrs</b><span>interpreting professional business negotiations</span></div>
+    <div class="stat"><b>Business-Ready</b><span>Korean and English built for negotiations, not textbooks</span></div>
+    <div class="stat"><b>7 industries</b><span>medical, IT, food, cosmetics, logistics, construction, corporate setup</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What I cover</p>
+      <h2>Interpretation built around the room you're walking into</h2>
+      <p>Each setting has its own pace and stakes, across a wide range of products and services. I prepare for the room, not just the language pair.</p>
+      <div class="chip-row">
+        <span class="chip">Medical</span>
+        <span class="chip">IT</span>
+        <span class="chip">Food</span>
+        <span class="chip">Cosmetics</span>
+        <span class="chip">Logistics</span>
+        <span class="chip">Construction</span>
+        <span class="chip">Corporate Setup &amp; Operations</span>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <p class="idx">01</p>
+        <h3>Business Meetings &amp; Negotiations</h3>
+        <p>Sit-down talks, contract terms, JV discussions. I interpret in real time and flag when a phrase means more — or less — than it sounds like.</p>
+      </div>
+      <div class="card">
+        <p class="idx">02</p>
+        <h3>Factory &amp; Site Visits</h3>
+        <p>Construction sites, production floors, quality walk-throughs. Technical terms handled correctly, on-site, not looked up afterward.</p>
+      </div>
+      <div class="card">
+        <p class="idx">03</p>
+        <h3>Trade Shows &amp; Exhibitions</h3>
+        <p>Booth coverage and live buyer meetings across medical, IT, food, and cosmetics events.</p>
+      </div>
+      <div class="card">
+        <p class="idx">04</p>
+        <h3>Sourcing &amp; Due-Diligence Calls</h3>
+        <p>Video calls with manufacturers, logistics partners, and distributors before you commit — vetting claims, capacity, and terms in both directions.</p>
+      </div>
+      <div class="card">
+        <p class="idx">05</p>
+        <h3>In-Country Representative</h3>
+        <p>Ongoing, on-the-ground representation for a foreign company in Korea — the point of contact with partners, regulators, and local staff when you don't have your own office here yet.</p>
+      </div>
+      <div class="card">
+        <p class="idx">06</p>
+        <h3>Corporate Setup &amp; Operations</h3>
+        <p>Interpretation and support around incorporating and running a Korea entity, drawn from having founded and operated several businesses here myself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="why">
+      <p class="eyebrow">Why a business interpreter</p>
+      <h2>Most interpreters translate words. I translate the deal.</h2>
+      <p style="margin-top:14px; color:#b9bfc7; max-width:56ch">I don't take tourism or casual interpretation work. My range is wide — negotiations, medical consultations, company briefings, factory and site visits — but every session is professional, and getting it right actually matters.</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <h4>I lived the language, not just studied it</h4>
+          <p>Years living and negotiating abroad in English-speaking business environments — before I ever interpreted for a living.</p>
+        </div>
+        <div class="why-item">
+          <h4>I've built and run my own businesses</h4>
+          <p>An exporter, an importer, a founder — I've sat on the other side of the negotiating table more than once, so I know what's actually at stake in the room.</p>
+        </div>
+        <div class="why-item">
+          <h4>I've led an overseas branch office</h4>
+          <p>A real operating role abroad, not a short-term posting — I know what it takes to run something, not just talk about it.</p>
+        </div>
+        <div class="why-item">
+          <h4>My industry range is real, not a checklist</h4>
+          <p>Every industry I list is one I've actually worked in — not just interpreted for once and put on a website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Process</p>
+      <h2>Three steps, start to finish</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <p class="num">CH 1 — BRIEF</p>
+        <h3>Send the context</h3>
+        <p>Meeting purpose, materials, and who's in the room. Ten minutes on a call covers most of it.</p>
+      </div>
+      <div class="step">
+        <p class="num">CH 2 — INTERPRET</p>
+        <h3>In the room, or on the call</h3>
+        <p>Real-time interpretation with business judgment attached — I'll note when something needs pushing on.</p>
+      </div>
+      <div class="step">
+        <p class="num">CH 3 — WRAP UP</p>
+        <h3>Confirm next steps on the spot</h3>
+        <p>Before we leave the room or hang up the call, we confirm decisions and action items together — so nothing is left ambiguous.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">In their own words</p>
+      <h2>Clients don't just book an interpreter — they ask for me specifically</h2>
+      <p>A message from a returning client, booking a second session in the same week — this time for a higher-stakes appointment.</p>
+    </div>
+    <blockquote class="quote">
+      <p>"If you ARE available though, I do need the best interpreter possible for this one."</p>
+      <cite>— Returning client, healthcare sector, Seoul</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="background">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Career background</p>
+      <h2>A career built across borders, not just languages</h2>
+      <p>Korean-born, fluent in both languages, and shaped by two decades abroad before returning to Korea.</p>
+    </div>
+    <div class="eng-list">
+      <div class="eng">
+        <p class="tag">Construction</p>
+        <p>12 years in the construction industry — Head of International Business Development at a Korean construction company, then Head of its overseas branch office.</p>
+      </div>
+      <div class="eng">
+        <p class="tag">Medical</p>
+        <p>Served as Korean representative for an overseas medical company during the COVID-19 pandemic, gaining direct exposure to the medical industry.</p>
+      </div>
+      <div class="eng">
+        <p class="tag">Trade &amp; food</p>
+        <p>Founded an international trading business exporting products from New Zealand and Australia, later building a separate construction-materials import business and a food import business.</p>
+      </div>
+      <div class="eng">
+        <p class="tag">In-country representative</p>
+        <p>Repeated roles as the Korea-based representative for foreign companies — including medical, IT, food, cosmetics, and logistics businesses — handling local liaison, partners, and operations on their behalf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Do you provide Korean-English interpretation for business meetings in Seoul?</h3>
+        <p>Yes. I interpret negotiations, meetings, and consultations between Korean and English across the Seoul metro area, and nationwide in Korea on request.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What industries do you specialize in?</h3>
+        <p>Medical, IT, food, cosmetics, logistics, construction, and corporate setup and operations — each from direct, hands-on career experience, not just interpretation work.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you interpret for factory or construction site visits?</h3>
+        <p>Yes. I interpret on-site at factories, production floors, and construction sites, handling technical terminology accurately in real time.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can you act as an in-country representative for a foreign company in Korea?</h3>
+        <p>Yes. I take on ongoing, on-the-ground representative roles for foreign companies operating in Korea, including liaison with partners, regulators, and local staff.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there a minimum booking time?</h3>
+        <p>Yes, sessions have a 2-hour minimum.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I book a session?</h3>
+        <p>Email or WhatsApp with the date, time, format, and purpose of the meeting, and I'll confirm availability directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Tell me about the meeting</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Direct contact</h3>
+        <div class="contact-line"><span class="k">EMAIL</span><a href="mailto:gts.motogt@gmail.com">gts.motogt@gmail.com</a></div>
+        <div class="contact-line"><span class="k">PHONE</span><a href="tel:+821074915501">+82 10 7491 5501</a></div>
+        <div class="contact-line"><span class="k">WHATSAPP</span><a href="https://wa.me/821074915501" target="_blank" rel="noopener">+82 10 7491 5501</a></div>
+        <div class="contact-line"><span class="k">BASED IN</span><span class="muted">Seoul Metro Area, South Korea</span></div>
+        <div class="contact-line"><span class="k">BOOKING</span><span class="muted">2-hour minimum per session</span></div>
+      </div>
+      <div class="contact-card">
+        <h3>What to send when you reach out</h3>
+        <ul class="checklist">
+          <li>Date, time, and format (in person / video call)</li>
+          <li>What the meeting is for — negotiation, factory visit, exhibition, sourcing call</li>
+          <li>Language pair to confirm (Korean ⇄ English)</li>
+          <li>Any materials, contracts, or specs in advance, if available</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>Korean ⇄ English business interpretation for 30+ years, based in the Seoul metro area.</span>
+    <span>© 2026 Benjamin Kim</span>
+  </div>
+</footer>
+
+</body>
+</html>
